@@ -1,0 +1,34 @@
+.card-wrapper {
+  position: relative;
+
+  div {
+    img {
+      display: block;
+      width: 9rem;
+      height: 9rem;
+      border: 4px solid white;
+      border-radius: 6px;
+    }
+
+    img:first-of-type {
+      position: absolute;
+      transform: rotateY(90deg);
+      transition: all ease-in 0.2s;
+    }
+
+    &.is-flipped img:first-of-type {
+      transform: rotateY(0deg);
+      transition-delay: 0.2s;
+    }
+
+    img:last-of-type {
+      transition: all ease-in 0.2s;
+      transition-delay: 0.2s;
+    }
+
+    &.is-flipped img:last-of-type {
+      transform: rotateY(90deg);
+      transition-delay: 0s;
+    }
+  }
+}

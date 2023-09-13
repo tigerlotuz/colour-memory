@@ -1,0 +1,49 @@
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+
+    button {
+      background: indigo;
+      color: white;
+      border: 2px solid white;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      width: fit-content;
+      cursor: pointer;
+
+      &:hover {
+        background: transparent;
+        color: white;
+      }
+    }
+
+    div {
+      display: flex;
+      width: fit-content;
+
+      p {
+        padding: 0 0 0 1rem;
+        margin: 0;
+      }
+    }
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+  }
+}
